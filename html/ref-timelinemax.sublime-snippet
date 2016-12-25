@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+<script src="https://nie.res.netease.com/comm/js/nie/ref/timelinemax.js"></script>
+]]></content>
+	<tabTrigger>feg-timelinemax</tabTrigger>
+	<description>GreenSock-timelinemax组件</description>
+	<scope>text.html</scope>
+</snippet>

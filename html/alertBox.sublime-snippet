@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+<link rel="stylesheet" href="https://nie.res.netease.com/comm/js/nie/util/alertBox/css/alertBox.css">
+]]></content>
+	<tabTrigger>feg-alertbox</tabTrigger>
+	<description>公用alert组件样式</description>
+	<scope>text.html</scope>
+</snippet>

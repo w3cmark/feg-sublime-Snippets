@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+.animation(${1:aniname} linear ${2:3}s ${2:0}s infinite both);
+]]></content>
+	<tabTrigger>feg-animation</tabTrigger>
+	<scope>source.less</scope>
+</snippet>

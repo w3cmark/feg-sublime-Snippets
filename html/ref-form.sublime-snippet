@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+<script src="https://nie.res.netease.com/comm/js/nie/ref/jquery.form.js"></script>
+]]></content>
+	<tabTrigger>feg-form</tabTrigger>
+	<description>form组件</description>
+	<scope>text.html</scope>
+</snippet>

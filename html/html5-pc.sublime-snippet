@@ -1,0 +1,74 @@
+<snippet>
+	<content><![CDATA[
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!--include virtual="/global_include/config.html"-->
+<title><!--#echo var='Title'--></title>
+<meta name="keywords" content="<!--#echo var='Keywords'-->" />
+<meta name="description" content="<!--#echo var='Description'-->" />
+<link rel="dns-prefetch" href="https://nie.res.netease.com">
+
+<!-- 适配跳转代码 -->
+<script type="text/javascript" data-fixed="true">
+	!function(){
+		function params(u, p){
+			var m = new RegExp('(?:&|/?)'+ p +'=([^&\$]+)').exec(u);
+			return m ? m[1] : '';
+		}
+		if(/iphone|ios|android|ipod/i.test(navigator.userAgent.toLowerCase()) == true && params(location.search, "from") != "mobile"){
+			location.href = '移动端地址';
+		}
+	}();
+</script><!--ignore-->
+
+<!-- 样式 -->
+<!--usemin css(pkg/boot.css)-->
+<link rel="stylesheet" type="text/css" href="css/index.less" />
+<!--end-->
+
+<!--[if lt IE 9]>
+<script src="https://nie.res.netease.com/comm/html5/html5shiv.js"></script>
+<![endif]-->
+</head>
+<body>
+	<!--[if lt IE 7]>
+		<div style="position:absoulute;left:0;top:0;width:100%;height:50px;background:rgb(255,255,233);color:rgb(30,84,148);border-bottom:1px solid rgb(230,230,198);text-align:center;line-height:50px;font-size:12px;">您使用的浏览器版本过低，可能会影响到您浏览本网页，建议您升级您的浏览器。</div>
+	<![endif]-->
+
+	<!--分享信息-->
+	<div id="share_content" style="display:none">
+		<div id="share_title" pub-name="分享文案" ></div>
+		<div id="share_url" pub-name="分享地址" ></div>
+		<div id="share_desc" pub-name="分享文本" ></div>
+		<img id="share_pic" data-src="#" pub-name="分享图片" />
+	</div>
+
+	<!--SEO start-->
+		<h1 class="hide"></h1>
+	<!--SEO end-->
+	
+	<!--【顶条】官网首页统一使用include，其他页面采用<div id="NIE-topBar"></div>的方式-->
+	<!--#include virtual="/global_site_inc/topBar-include.html"-->
+
+	<div class="wrap">
+
+	</div>
+
+	<!--版权-->
+	<div id="NIE-copyRight"></div>
+
+<!-- jquery mix NIE (最新版本）-->
+<script src="https://nie.res.netease.com/comm/js/jquery(mixNIE).1.11.js"></script>
+
+<!--usemin js(pkg/index.js)-->
+<script src="js/app/index.js"></script>
+<!--end-->
+</body>
+</html>
+]]></content>
+	<tabTrigger>feg-html5-pc</tabTrigger>
+    <description>PC Html5模板</description>
+	<scope>text.html</scope>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+<script src="https://nie.res.netease.com/comm/js/nie/ref/mustache.js"></script>
+]]></content>
+	<tabTrigger>feg-mustache</tabTrigger>
+	<description>mustache组件</description>
+	<scope>text.html</scope>
+</snippet>

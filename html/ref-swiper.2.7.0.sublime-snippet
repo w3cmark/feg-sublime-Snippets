@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+<link rel="stylesheet" href="http://res.nie.netease.com/comm/js/nie/ref/css/swiper.2.7.0.css">
+
+<script src="https://nie.res.netease.com/comm/js/nie/ref/swiper.2.7.0.js"></script>
+]]></content>
+	<tabTrigger>feg-swiper.2.7.0</tabTrigger>
+	<description>swiper.2.7.0组件</description>
+	<scope>text.html</scope>
+</snippet>

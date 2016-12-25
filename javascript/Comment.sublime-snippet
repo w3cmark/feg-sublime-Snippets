@@ -1,0 +1,42 @@
+<snippet>
+	<content><![CDATA[
+var Pager = nie.require("nie.util.pager"),//分页组件  
+    Comment = nie.require("nie.util.Comment"); //评论组件
+
+var cmt = Comment.create('#Jniecmt', {
+    showFace: true, // [bool] 是否显示头像
+    initComment:function(totalpage){ // [function] 载入评论初始化后，返回总页数
+        var $cmt_comments = $("#cmt_comments");
+        // 分页组件
+        var page = Pager.create({
+            pager: "#Jniecmt .cmt_pages",    //翻页容器DOM，#必填
+            curPage: 1,      //当前页，默认为1，#选填
+            sumPage: totalpage,     //总页数，#必填
+            showNum: 5,      //显示几个页码，默认为7，#选填
+            showFn: false,    //是否显示首页、上一页、下一页、尾页这些功能按钮，默认为true
+            callback: function(cur) { //回调函数，切换页码是回调，参数： cur, 切换后的页码
+                cmt.getComments(cur); //获取指定页的评论
+                setTimeout(function(){
+                    $cmt_comments.getNiceScroll().resize();
+                    $cmt_comments.getNiceScroll(0).doScrollTop(0);
+                },200)
+            }
+        });
+
+        // 内部滚动组件
+        $cmt_comments.niceScroll({
+            scrollspeed: 80,
+            cursorcolor: "#ddd",
+            cursorborderradius: '5px',
+            cursorwidth: '5px',
+            cursorborder: 'none',
+            autohidemode: false,
+            horizrailenabled: false
+        });
+    }
+});
+]]></content>
+	<tabTrigger>feg-comment</tabTrigger>
+	<description>评论组件</description>
+	<scope>source.js</scope>
+</snippet>

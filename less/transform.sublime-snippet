@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+.transform(${1:scale(0.7)});
+]]></content>
+	<tabTrigger>feg-transform</tabTrigger>
+	<description>transform动画</description>
+	<scope>source.less</scope>
+</snippet>

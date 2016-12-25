@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+.gradient(top,#${1:f7e7b8},#${2:b48605});
+]]></content>
+	<tabTrigger>feg-gradient</tabTrigger>
+	<description>颜色渐变</description>
+	<scope>source.less</scope>
+</snippet>

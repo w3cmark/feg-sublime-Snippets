@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+<script src="https://nie.res.netease.com/comm/js/nie/ref/jquery.easing.js"></script>
+]]></content>
+	<tabTrigger>feg-easing</tabTrigger>
+	<description>easing组件</description>
+	<scope>text.html</scope>
+</snippet>

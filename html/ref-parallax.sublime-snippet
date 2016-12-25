@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+<script src="https://nie.res.netease.com/comm/js/nie/ref/jquery.parallax.js"></script>
+]]></content>
+	<tabTrigger>feg-parallax</tabTrigger>
+	<description>parallax组件</description>
+	<scope>text.html</scope>
+</snippet>

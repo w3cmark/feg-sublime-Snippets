@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+nie.define("${1:模块名}",function(){
+	
+});
+]]></content>
+	<tabTrigger>feg-define</tabTrigger>
+	<description>define</description>
+	<scope>source.js</scope>
+</snippet>

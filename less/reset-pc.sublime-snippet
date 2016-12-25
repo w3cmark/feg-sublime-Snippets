@@ -1,0 +1,216 @@
+<snippet>
+	<content><![CDATA[
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,code,del,dfn,em,img,q,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,button,input,textarea{
+    margin:0;
+    padding:0;
+}
+// border
+fieldset,img{
+    border:0;
+}
+// outline
+:focus {
+    outline:0;
+}
+// font
+h1, h2, h3, h4, h5, h6, code {
+    font-size: 100%;
+}
+input, button, textarea,
+select, optgroup, option {
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+}
+body {
+    line-height: 1.5;
+}
+// list
+ol,ul{
+    list-style:none;
+}
+textarea{
+    overflow:auto;
+    resize:none;
+}
+a,button{
+    cursor:pointer;
+}
+// table
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+caption, th {
+    text-align: left;
+}
+// sup、sub
+sup, sub {
+    font-size: 100%;
+    vertical-align: baseline;
+}
+// link、ins、del
+:link, :visited ,ins {
+    text-decoration: none;
+}
+del {
+    text-decoration: line-through;
+}
+a {
+    &:hover{
+        text-decoration:underline;
+    }
+}
+/*********** layout base ***********/
+body{
+    font-family:"Microsoft YaHei","simSun","Lucida Grande","Lucida Sans Unicode",Arial;
+    font-size:12px;
+    min-width:1280px;
+}
+.clearfix{
+    zoom:1;
+    &:after{
+        clear: both;
+        content:'\0020';
+        display: block;
+        visibility:hidden;
+        height:0;
+    }
+}
+.hide{
+    display:none;
+}
+/*********** mixin function ***********/
+.pre(@style;@value){
+    -webkit-@{style}: @value;
+       -moz-@{style}: @value;
+        -ms-@{style}: @value;
+            @{style}: @value;
+}
+.keyframes(@name) { 
+    @-webkit-keyframes @name {
+        .-frames(-webkit-)
+    }
+    @-moz-keyframes @name {
+        .-frames(-moz-)
+    }
+    @-o-keyframes @name {
+        .-frames(-o-)
+    }
+    @-ms-keyframes @name {
+        .-frames(-ms-)
+    }
+    @keyframes @name {
+        .-frames()
+    }
+}
+.transition(@arg){
+    .pre(transition;@arg);
+}
+.transform(@arg){
+    .pre(transform;@arg);
+}
+.animation(@value){
+    .pre(animation;@value);
+}
+/**** DEMO
+.opacity(0.5);
+****/
+.opacity (@opacity: 0.5) {
+    @tempOpacity: @opacity * 100;
+    opacity: @opacity;
+    filter: alpha(opacity=@tempOpacity);
+}
+
+/**** DEMO
+.box-shadow(2px 2px 3px #aaaaaa);
+****/
+.box-shadow(@arg){
+    .pre(box-shadow;@arg);
+}
+/**** DEMO
+.inline-block();
+****/
+.inline-block(){
+    display: inline-block;
+    *display: inline;
+    *zoom:1;
+}
+// 半透明
+/**** DEMO
+.background-rgba(rgba(255, 255, 255, 0.5));
+****/
+.background-rgba(@rgba:rgba(0, 0, 0, 0.5)){
+    background: @rgba;
+    @argb: argb(@rgba);
+    filter: ~"progid:DXImageTransform.Microsoft.gradient(startcolorstr='@{argb}',endcolorstr='@{argb}')";
+}
+// 颜色渐变
+/**** DEMO
+.gradient(top,#f7e7b8,#b48605);
+****/
+.gradient-background(@origin; @startColor; @endColor){
+    background-color:@startColor/2 + @endColor/2;
+    background: -webkit-linear-gradient(@origin, @startColor, @endColor);
+    background:-moz-linear-gradient(@origin, @startColor, @endColor);
+    background: -ms-linear-gradient(@origin, @startColor, @endColor);
+    background: linear-gradient(@origin, @startColor, @endColor);
+}
+.gradient(@origin: top; @startColor; @endColor) when(@origin=top){    
+    filter:~"progid:DXImageTransform.Microsoft.gradient(startColorstr='@{startColor}', endColorstr='@{endColor}',gradientType=0)";
+    .gradient-background(@origin; @startColor; @endColor);
+}
+.gradient(@origin: left; @startColor; @endColor) when(@origin=left){
+    filter:~"progid:DXImageTransform.Microsoft.gradient(startColorstr='@{startColor}', endColorstr='@{endColor}',gradientType=1)";
+    .gradient-background(@origin; @startColor; @endColor);
+}
+// 透明度渐变
+/**** DEMO
+当第一个参数为top时，最后一个参数为高度，为了兼容ie低版本；
+当第一个参数为left时，最后一个参数为宽度；
+.gradient-opacity(top,rgba(255, 0, 0, 0),rgba(255, 0, 0, 0.5),60);
+****/
+.gradient-opacity-background(@origin; @startColor; @endColor){
+    @startAlpha: alpha(@startColor) * 100;
+    @endAlpha: alpha(@endColor) * 100;
+    @starthexColor: argb(@startColor);
+    @endhexColor: argb(@endColor);
+    background: -webkit-linear-gradient(@origin, @startColor, @endColor);
+    background:-moz-linear-gradient(@origin, @startColor, @endColor);
+    background: -ms-linear-gradient(@origin, @startColor, @endColor);
+    background: linear-gradient(@origin, @startColor, @endColor);
+}
+.gradient-opacity(@origin: top; @startColor;@endColor;@height:50) when(@origin=top){
+    .gradient-opacity-background(@origin; @startColor; @endColor);
+    filter:~"alpha(opacity=@{startAlpha} finishopacity=@{endAlpha} style=1 startx=0,starty=0,finishx=0,finishy=@{height}) progid:DXImageTransform.Microsoft.gradient(startColorstr='@{starthexColor}', endColorstr='@{endhexColor}')";    
+}
+.gradient-opacity(@origin: left; @startColor;@endColor;@width:50) when(@origin=left){
+    filter:~"alpha(opacity=@{startAlpha} finishopacity=@{endAlpha} style=1 startx=0,starty=0,finishx=@{width},finishy=0) progid:DXImageTransform.Microsoft.gradient(startColorstr='@{starthexColor}', endColorstr='@{endhexColor}')";
+    .gradient-opacity-background(@origin; @startColor; @endColor);
+}
+// 文本溢出省略号
+/**** DEMO
+单行
+.text-overflow-ellipsis(1);
+多行
+ .text-overflow-ellipsis(2);
+****/
+.text-overflow-ellipsis(@line) when(@line=1){
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.text-overflow-ellipsis(@line) when(@line>1){
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: @line;
+    word-break: break-all;
+}
+]]></content>
+	<tabTrigger>feg-reset-pc</tabTrigger>
+	<description>pc reset</description>
+	<scope>source.less</scope>
+</snippet>

@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+var flash = nie.require("util.swfobject");
+
+\$('#flash-wrap').flash({
+    swf: '${1:}',
+    width: ${2:960},
+    height: ${3:600},
+    allowScriptAccess: 'always',
+    wmode: 'opaque'
+});
+]]></content>
+	<tabTrigger>feg-flash</tabTrigger>
+	<description>flash组件</description>
+	<scope>source.js</scope>
+</snippet>

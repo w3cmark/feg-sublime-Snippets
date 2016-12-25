@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+var Login = nie.require("nie.util.fur3");
+
+var example = new fur3({
+    holder: '#example', // 组件容器，请使用 id 作为选择器。【必填】
+    product: 'xyq', // 产品名。【必填】
+    host: 'xyq.163.com', // host。【必填】
+    promark: 'ZItTwIc' // promark。【必填】
+});
+]]></content>
+	<tabTrigger>feg-fur3</tabTrigger>
+	<description>新快速注册组件</description>
+	<scope>source.js</scope>
+</snippet>

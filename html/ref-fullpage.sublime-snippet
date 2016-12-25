@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+<link rel="stylesheet" href="http://res.nie.netease.com/comm/js/nie/ref/css/jquery.fullpage.css">
+	
+<script src="https://nie.res.netease.com/comm/js/nie/ref/jquery.fullpage.js"></script>
+]]></content>
+	<tabTrigger>feg-fullpage</tabTrigger>
+	<description>fullpage组件</description>
+	<scope>text.html</scope>
+</snippet>

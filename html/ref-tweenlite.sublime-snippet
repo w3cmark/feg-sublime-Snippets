@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+<script src="https://nie.res.netease.com/comm/js/nie/ref/tweenlite.js"></script>
+<script src="https://nie.res.netease.com/comm/js/nie/ref/cssplugin.js"></script>
+]]></content>
+	<tabTrigger>feg-tweenlite</tabTrigger>
+	<description>GreenSock-tweenlite组件</description>
+	<scope>text.html</scope>
+</snippet>

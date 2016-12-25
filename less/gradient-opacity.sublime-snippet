@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+.gradient-opacity(top,rgba(255, 0, 0, 0),rgba(255, 0, 0, 0.5),60);
+]]></content>
+	<tabTrigger>feg-gradient-opacity</tabTrigger>
+	<description>透明度渐变</description>
+	<scope>source.less</scope>
+</snippet>

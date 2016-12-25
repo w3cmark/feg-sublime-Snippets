@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[
+var Pager = nie.require("nie.util.pager");
+
+var $show1 = $("#show"),
+    page = Pager.create({
+    pager: "#pager",    //翻页容器DOM，#必填
+    curPage: 1,      //当前页，默认为1，#选填
+    sumPage: 10,     //总页数，#必填
+    showNum: 8,      //显示几个页码(取值必须大于等于7)，默认为7，#选填
+    showFn: true,    //是否显示首页、上一页、下一页、尾页这些功能按钮，默认为true
+    callback: function(cur) {    //回调函数，切换页码是回调，参数： cur, 切换后的页码
+        console.log("点击了第" + cur + "页");
+    }
+});
+]]></content>
+	<tabTrigger>feg-pager</tabTrigger>
+	<description>分页组件</description>
+	<scope>source.js</scope>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+.box-shadow(${1:2px} ${2:2px} ${3:2px} #${4:aaa});
+]]></content>
+	<tabTrigger>feg-box-shadow</tabTrigger>
+	<description>BoxShadow兼容</description>
+	<scope>source.less</scope>
+</snippet>

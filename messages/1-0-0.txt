@@ -1,0 +1,11 @@
+=============================================
+FEG Snippets - Has been Created !!
+=============================================
+
+
+Documentation, examples & issue filing can be found here:
+https://github.com/w3cmark/feg-sublime-snippets
+
+------------------------------
+Follow me on weibo: @w3cmark
+------------------------------

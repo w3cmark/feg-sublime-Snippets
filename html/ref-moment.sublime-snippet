@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+<script src="https://nie.res.netease.com/comm/js/nie/ref/moment.js"></script>
+]]></content>
+	<tabTrigger>feg-moment</tabTrigger>
+	<description>moment组件</description>
+	<scope>text.html</scope>
+</snippet>

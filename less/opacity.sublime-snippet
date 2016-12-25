@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+.opacity(${1:0.5});
+]]></content>
+	<tabTrigger>feg-opacity</tabTrigger>
+	<description>opacity兼容</description>
+	<scope>source.less</scope>
+</snippet>

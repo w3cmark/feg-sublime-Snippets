@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+.${1:aniname}(@n:${1:aniname}){
+    .keyframes(@n);
+    .-frames(@-...){
+        0% {
+            @{-}transform:translateX(0px);
+        }
+        100% {
+            @{-}transform:translateX(10px);
+        }
+    }
+}
+]]></content>
+	<tabTrigger>feg-keyframes</tabTrigger>
+	<description>动画帧定义</description>
+	<scope>source.less</scope>
+</snippet>

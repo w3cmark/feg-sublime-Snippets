@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+<script src="https://nie.res.netease.com/comm/js/nie/ref/jquery.scrollorama.js"></script>
+]]></content>
+	<tabTrigger>feg-scrollorama</tabTrigger>
+	<description>scrollorama组件</description>
+	<scope>text.html</scope>
+</snippet>

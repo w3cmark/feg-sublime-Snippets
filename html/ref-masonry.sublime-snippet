@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+<script src="https://nie.res.netease.com/comm/js/nie/ref/jquery.masonry.js"></script>
+]]></content>
+	<tabTrigger>feg-masonry</tabTrigger>
+	<description>masonry组件</description>
+	<scope>text.html</scope>
+</snippet>

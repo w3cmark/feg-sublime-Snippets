@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+var PopDialog = nie.require("nie.util.PopDialog");
+
+/*****************************快速调用*****************************/
+PopDialog.Alert('我是Alert');  //Alert弹窗
+PopDialog.Confirm('我是Confirm',function(result){ //Confirm弹窗
+    console.log(result);
+});
+PopDialog.Prompt('欢迎？','请输入您的名字',function(result){ //Prompt弹窗
+    console.log(result);
+});
+]]></content>
+	<tabTrigger>feg-popdialog</tabTrigger>
+	<description>公用alert组件</description>
+	<scope>source.js</scope>
+</snippet>

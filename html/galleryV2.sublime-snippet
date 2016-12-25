@@ -1,0 +1,36 @@
+<snippet>
+	<content><![CDATA[
+<div class="outer_wrap">
+	<div class="gallery_container">
+		<a href="javascript:void(0);" class="gallery_item orange" >
+			slide0
+		</a>
+		<a href="javascript:void(0);" class="gallery_item red" >
+			slide1
+		</a> 
+		<a href="javascript:void(0);" class="gallery_item blue" >
+			slide2
+		</a> 
+		<a href="javascript:void(0);" class="gallery_item gray" >
+			slide3
+		</a> 
+		<a href="javascript:void(0);" class="gallery_item black" >
+			slide4
+		</a>
+		<a href="javascript:void(0);" class="gallery_item orange" >
+			slide5
+		</a>
+		<a href="javascript:void(0);" class="gallery_item red" >
+			slide6
+		</a><a href="javascript:void(0);" class="gallery_item gray" >
+			slide7
+		</a>
+		<a href="javascript:void(0);" class="gallery_prev">前</a>
+		<a href="javascript:void(0);" class="gallery_next">后</a>
+	</div>
+</div>
+]]></content>
+	<tabTrigger>feg-galleryV2</tabTrigger>
+	<description>3d相册轮播组件</description>
+	<scope>text.html</scope>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+.transition(${1:opacity} ease-in-out ${2:0.3}s);
+]]></content>
+	<tabTrigger>feg-transition</tabTrigger>
+	<description>transition动画</description>
+	<scope>source.less</scope>
+</snippet>

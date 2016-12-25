@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+<div id="nie-download" class="nie-download" pub-name="下载参数" id="js_nie_download" data-download="fsqq|gw">
+	<div class="NIE-qrcode"></div>
+	<div class="buttons">
+		<a class="link-apple NIE-button-ios">App Store下载</a>
+		<a class="link-android NIE-button-android">安卓版下载</a>
+	</div>
+</div>
+]]></content>
+	<tabTrigger>feg-niedownload</tabTrigger>
+	<description>手游官网下载组件</description>
+	<scope>text.html</scope>
+</snippet>

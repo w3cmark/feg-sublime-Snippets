@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+.background-rgba(rgba(${1:255}, ${2:255}, ${3:255}, ${4:0.5}));
+]]></content>
+	<tabTrigger>feg-background-rgba</tabTrigger>
+	<description>半透明</description>
+	<scope>source.less</scope>
+</snippet>
