@@ -9,7 +9,7 @@ Feel free to let me know what else you want added via:
 - [Issues](https://github.com/w3cmark/feg-sublime-snippets/issues)
 
 ## What's included - contents
-- [Html](#javascript)
+- [Html](#html)
 - [Less](#less)
 - [Javascript](#javascript)
 - [License](#license)
