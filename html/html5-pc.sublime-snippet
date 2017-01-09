@@ -3,7 +3,7 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
+<meta charset="${1:utf-8}">
 <!--include virtual="/global_include/config.html"-->
 <title><!--#echo var='Title'--></title>
 <meta name="keywords" content="<!--#echo var='Keywords'-->" />
@@ -18,13 +18,13 @@
 			return m ? m[1] : '';
 		}
 		if(/iphone|ios|android|ipod/i.test(navigator.userAgent.toLowerCase()) == true && params(location.search, "from") != "mobile"){
-			location.href = '移动端地址';
+			location.href = '${2:移动端地址}';
 		}
 	}();
 </script><!--ignore-->
 
 <!-- 样式 -->
-<!--usemin css(pkg/boot.css)-->
+<!--usemin css(pkg/index.css)-->
 <link rel="stylesheet" type="text/css" href="css/index.less" />
 <!--end-->
 

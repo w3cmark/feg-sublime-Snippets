@@ -8,7 +8,7 @@ Feel free to let me know what else you want added via:
 - FEG [Blog](http://feg.netease.com/)
 - [Issues](https://github.com/w3cmark/feg-sublime-snippets/issues)
 
-## What's included - contents
+##What's included - contents
 - [Html](#html)
 - [Less](#less)
 - [Javascript](#javascript)
