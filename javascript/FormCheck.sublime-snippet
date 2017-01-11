@@ -3,25 +3,25 @@
 var FormCheck = nie.require("nie.util.FormCheck");
 
 /*****************************逐个检测*****************************/
-if(!FormCheck.required($phone)){
+if(!FormCheck.required(\$phone)){
     PopDialog.Alert('请输入手机号码！');
-}else if(!FormCheck.phone($phone)){
+}else if(!FormCheck.phone(\$phone)){
     PopDialog.Alert('请输入正确的手机号码！');
 }else if(!FormCheck.required(verifyVal)){
     PopDialog.Alert('请输入验证码！');
 }else if(!FormCheck.verify(verifyVal,4,'num')){
     PopDialog.Alert('请输入正确的验证码！');
-}else if(!FormCheck.required($email)){
+}else if(!FormCheck.required(\$email)){
     PopDialog.Alert('请输入邮箱地址！');
-}else if(!FormCheck.email($email)){
+}else if(!FormCheck.email(\$email)){
     PopDialog.Alert('请输入正确邮箱地址！');
-}else if(!FormCheck.required($ip)){
+}else if(!FormCheck.required(\$ip)){
     PopDialog.Alert('请输入IP地址！');
-}else if(!FormCheck.ip($ip)){
+}else if(!FormCheck.ip(\$ip)){
     PopDialog.Alert('请输入正确的IP地址！');
-}else if(!FormCheck.required($length)){
+}else if(!FormCheck.required(\$length)){
     PopDialog.Alert('请输入字符！');
-}else if(!FormCheck.string($length,4,8)){
+}else if(!FormCheck.string(\$length,4,8)){
     PopDialog.Alert('请输入符合长度的字符！');
 }else{
     PopDialog.Alert('O(∩_∩)O哈哈~套接口吧')

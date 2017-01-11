@@ -4,7 +4,7 @@ var audio = nie.require("nie.util.audio");
 
 // demo
 var mp3 = audio.create({
-    audio: ['http://***/song1.mp3', 'http://***/song2.mp3', 'http://***/song3.mp3'],
+    audio: ['https://***/song1.mp3', 'https://***/song2.mp3', 'https://***/song3.mp3'],
     autoPlay: true, 
     loop: true, 
     end: function(cur, length) { 

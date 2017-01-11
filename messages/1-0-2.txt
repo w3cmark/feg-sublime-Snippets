@@ -1,0 +1,21 @@
+=============================================
+FEG Snippets - Has been Created !!
+=============================================
+
+New Features
+------------------------------------------------------------
+ - Updated "html5-m"
+ - Updated "audio"
+ - Updated "Comment"
+ - Updated "copytext"
+ - Updated "FormCheck"
+ - Updated "pager"
+ - Updated "shareV5"
+------------------------------------------------------------
+
+Documentation, examples & issue filing can be found here:
+https://github.com/w3cmark/feg-sublime-snippets
+
+------------------------------
+Follow me on weibo: @w3cmark
+------------------------------

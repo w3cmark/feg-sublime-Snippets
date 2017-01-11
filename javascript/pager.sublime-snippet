@@ -2,7 +2,7 @@
 	<content><![CDATA[
 var Pager = nie.require("nie.util.pager");
 
-var $show1 = $("#show"),
+var \$show1 = \$("#show"),
     page = Pager.create({
     pager: "#pager",    //翻页容器DOM，#必填
     curPage: 1,      //当前页，默认为1，#选填

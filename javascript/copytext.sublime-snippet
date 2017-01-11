@@ -4,7 +4,7 @@ var copy = nie.require("nie.util.copytext");
 
 copy({
     btn : ".copy",            // 点击按钮位置
-    text : $(".text").text(), // 需要复制的文本
+    text : \$(".text").text(), // 需要复制的文本
     callback : function (){   // 复制成功后，回调函数
         alert("复制成功！");
     }

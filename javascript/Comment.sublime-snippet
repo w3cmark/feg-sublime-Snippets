@@ -6,7 +6,7 @@ var Pager = nie.require("nie.util.pager"),//分页组件
 var cmt = Comment.create('#Jniecmt', {
     showFace: true, // [bool] 是否显示头像
     initComment:function(totalpage){ // [function] 载入评论初始化后，返回总页数
-        var $cmt_comments = $("#cmt_comments");
+        var \$cmt_comments = \$("#cmt_comments");
         // 分页组件
         var page = Pager.create({
             pager: "#Jniecmt .cmt_pages",    //翻页容器DOM，#必填
@@ -17,14 +17,14 @@ var cmt = Comment.create('#Jniecmt', {
             callback: function(cur) { //回调函数，切换页码是回调，参数： cur, 切换后的页码
                 cmt.getComments(cur); //获取指定页的评论
                 setTimeout(function(){
-                    $cmt_comments.getNiceScroll().resize();
-                    $cmt_comments.getNiceScroll(0).doScrollTop(0);
+                    \$cmt_comments.getNiceScroll().resize();
+                    \$cmt_comments.getNiceScroll(0).doScrollTop(0);
                 },200)
             }
         });
 
         // 内部滚动组件
-        $cmt_comments.niceScroll({
+        \$cmt_comments.niceScroll({
             scrollspeed: 80,
             cursorcolor: "#ddd",
             cursorborderradius: '5px',
