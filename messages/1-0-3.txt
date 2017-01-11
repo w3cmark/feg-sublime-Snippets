@@ -1,0 +1,20 @@
+=============================================
+FEG Snippets - Has been Created !!
+=============================================
+
+New Features
+------------------------------------------------------------
+ - Updated "html5-m"
+ - Updated "html5-pc"
+ - Updated "art-reset-m"
+ - Updated "art-reset-pc"
+ - Updated "reset-m"
+ - Updated "reset-pc"
+------------------------------------------------------------
+
+Documentation, examples & issue filing can be found here:
+https://github.com/w3cmark/feg-sublime-snippets
+
+------------------------------
+Follow me on weibo: @w3cmark
+------------------------------

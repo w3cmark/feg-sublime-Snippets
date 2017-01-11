@@ -11,7 +11,7 @@
 <link rel="dns-prefetch" href="https://nie.res.netease.com">
 
 <!-- 适配跳转代码 -->
-<script type="text/javascript" data-fixed="true">
+<script type="text/javascript">
 	!function(){
 		function params(u, p){
 			var m = new RegExp('(?:&|/?)'+ p +'=([^&\$]+)').exec(u);
@@ -39,10 +39,10 @@
 
 	<!--分享信息-->
 	<div id="share_content" style="display:none">
-		<div id="share_title" pub-name="分享文案" ></div>
-		<div id="share_url" pub-name="分享地址" ></div>
-		<div id="share_desc" pub-name="分享文本" ></div>
-		<img id="share_pic" data-src="#" pub-name="分享图片" />
+		<div id="share_title" pub-name="分享文案">xxx</div>
+		<div id="share_url" pub-name="分享地址">xxx</div>
+		<div id="share_desc" pub-name="分享文本">xxx</div>
+		<img id="share_pic" data-src="#" pub-name="分享图片"/>
 	</div>
 
 	<!--SEO start-->

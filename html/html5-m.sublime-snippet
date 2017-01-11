@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="${1:utf-8}">
-<!--include virtual="/m/global_include/config.html"-->
+<!--include virtual="/global_include/config.html"-->
 <title><!--#echo var='Title'--></title>
 <meta name="keywords" content="<!--#echo var='Keywords'-->"/>
 <meta name="description" content="<!--#echo var='Description'-->"/>
@@ -20,7 +20,7 @@
 <link rel="dns-prefetch" href="https://nie.res.netease.com">
 
 <!-- 适配跳转代码 -->
-<script data-fixed="true">
+<script type="text/javascript">
 	!function(){
 		if(/iphone|ios|android|ipod/i.test(navigator.userAgent.toLowerCase()) == false){
 			location.href = '${2:PC地址}';
@@ -38,7 +38,7 @@
 		<div id="share_title" pub-name="分享标题">xxx</div>
 		<div id="circle_title" pub-name="朋友圈分享文案">xxx</div><!--不填则用share_title作为朋友圈分享文案-->
 		<div id="share_url" pub-name="分享链接">xxx</div>
-		<img id="share_pic" pub-name="分享图片" data-src="../img/logo.png" />
+		<img id="share_pic" pub-name="分享图片" data-src="#" />
 		<div id="share_desc" pub-name="分享内容">xxx</div>
 		<img id="qr_icon" pub-name="二维码图标" data-src="" /><!--为空则使用网易游戏logo-->
 		<div id="share_guide" pub-name="微信分享引导语">点击右上角按钮<br/>分享到朋友圈</div>

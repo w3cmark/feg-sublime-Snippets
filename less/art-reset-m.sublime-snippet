@@ -1,9 +1,5 @@
 <snippet>
 	<content><![CDATA[
-.aritcle{
-    padding: 0.32rem;
-    min-height: 5rem;
-}
 #NIE-art{
     h1{
         font-size: 0.4rem;
@@ -12,8 +8,8 @@
         display: block;
         text-align: center;
     }
-  .artDate{
-      text-align: right;
+    .artDate{
+        text-align: right;
         font-size: 0.24rem;
         color:rgba(255,255,255,0.6);
         display: block;
@@ -21,10 +17,9 @@
         border-bottom:1px solid #aaa;
         padding-bottom: 0.1rem;
     }
-.artText{
+    .artText{
         padding:0.3rem 0;
         p{
-            
             line-height: 0.54rem;
             font-size: 0.32rem;
             margin-bottom: 0.3rem;
@@ -33,7 +28,6 @@
         a{
             color: #c7ae6c;
         }
-        
         h2{
             line-height:.36rem;
             font-size:0.32rem;
@@ -56,41 +50,83 @@
             width: auto!important;
             height: auto!important;
         }
-        /* 加粗    */.b{font-weight:800;}
-        /* 着重色1  */.red{color:#f00;}
-        /* 着重色1加粗 */.redb{color:#f00;font-weight:bold;}
-        /* 着重色2  */.blue{color:#00F;}
-        /* 服务器名字 */.fuchsia{color:#ff00ff;}
-        ul h4{font-weight:bold;}
-        ul li{padding:0.12rem 0 .12rem 0.4rem;line-height:0.48rem;}
-        ul li ol{margin:0 0 0 0.4rem;}
-        ul li ol li{list-style:inside decimal;margin:0;padding:0;font-size:0.24rem;line-height:0.42rem;background:none;}
-        /* 备注 */.artRemark{margin:0.2rem 0;padding:0.2rem 0;border-top:1px #ccc dashed;}
-        /* 推荐 */ .artRecom{}
-        
-        /*文字表格*/
-        
-        table{width:100%; margin:0.16rem auto;font-size:0.24rem;border-collapse:collapse;}
-        table td{border:1px #b3b3b3 solid;vertical-align:middle;}
-        table thead td{font-weight:bold;font-size:0.24rem;}
-        table img{
-            width:100%;
-            height: auto;
+        /* 加粗    */
+        .b{
+            font-weight:bold;
         }
-        table.table-pic img{
-            display: block;
+        /* 着重色1  */
+        .red{
+            color:#f00;
         }
-         table.table-pic td{
-             border:0
-         }
-
+        /* 着重色1加粗 */
+        .redb{
+            color:#f00;
+            font-weight:bold;
+        }
+        /* 着重色2  */
+        .blue{
+            color:#00F;
+        }
+        /* 服务器名字 */
+        .fuchsia{
+            color:#ff00ff;
+        }
+        ul{
+            h4{
+                font-weight:bold;
+            }
+            li{
+                padding:0.12rem 0 .12rem 0.4rem;
+                line-height:0.48rem;
+                ol{
+                    margin:0 0 0 0.4rem;
+                    li{
+                        list-style:inside decimal;
+                        margin:0;
+                        padding:0;
+                        font-size:0.24rem;
+                        line-height:0.42rem;
+                        background:none;
+                    }
+                }
+            }
+        }
+        /* 备注 */
+        .artRemark{
+            margin:0.2rem 0;
+            padding:0.2rem 0;
+            border-top:1px #ccc dashed;
+        }
+        table{
+            width:100%; 
+            margin:0.16rem auto;
+            font-size:0.24rem;
+            border-collapse:collapse;
+            td{
+                border:1px #b3b3b3 solid;
+                vertical-align:middle;
+                word-break:break-word;
+                overflow:hidden;
+                padding: 0.1rem;
+            }
+            thead td{
+                font-weight:bold;
+                font-size:0.24rem;
+            }
+            img{
+                width:100%;
+                height: auto;
+            }
+            &.table-pic {
+                td{
+                    border:0
+                }
+                img{
+                    display: block;
+                }
+            }
+        }
     }
-     table td{
-        word-break:break-word;
-        overflow:hidden;
-        padding: 0.1rem;
-     }
-    
 }
 ]]></content>
 	<tabTrigger>feg-art-reset-m</tabTrigger>
