@@ -1,0 +1,21 @@
+=============================================
+FEG Snippets - Has been Created !!
+=============================================
+
+New Features
+------------------------------------------------------------
+ - Added "include"
+ - Added "inline"
+ - Added "DB"
+ - Added "login2"
+ - Added "mobiShare2"
+ - Added "animation-lib"
+ - Updated "art-reset-m"
+------------------------------------------------------------
+
+Documentation, examples & issue filing can be found here:
+https://github.com/w3cmark/feg-sublime-snippets
+
+------------------------------
+Follow me on weibo: @w3cmark
+------------------------------

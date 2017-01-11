@@ -1,0 +1,48 @@
+<snippet>
+	<content><![CDATA[
+nie.define('DB',function(){
+    var _urlhost = 'http://gifter.webapp.163.com/ma11/',
+    getData = function(url,data,success,error){
+        $.ajax({
+            url: url ,
+            type:'get',
+            data: data ,
+            dataType: 'jsonp',
+            success:function(data){
+                success(data);
+            },
+            error: function(){
+                alert('网络信号不好，请刷新再试');
+                if(error){
+                    error();
+                }
+            }
+        });
+    },
+    check_login = function(data,success){
+        //假数据调试
+        // success({
+        //     "result": 201,
+        //     "msg": "msg"
+        // })
+        // return;
+        getData(_urlhost+'check_login',data,success);
+    };
+    return{
+        check_login: check_login
+    }
+
+});
+
+//调用
+// DB.signCount({
+//     'code': code,
+//     'state': state
+// },function(){
+
+// });
+]]></content>
+	<tabTrigger>feg-db</tabTrigger>
+	<description>接口调用模板</description>
+	<scope>source.js</scope>
+</snippet>

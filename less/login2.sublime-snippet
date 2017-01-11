@@ -1,0 +1,232 @@
+<snippet>
+	<content><![CDATA[
+/*loading如果外面层没有定义宽或高，不可以设置为块*/
+.fur-page-loading {
+
+}
+
+/*登陆块设置*/
+.g-bd{
+    position:relative;
+    width:262px;
+    overflow:hidden;
+    border-radius:0;
+    margin:0 auto;
+    background: none;
+}
+
+/*单独邮箱或者手机登陆时隐藏*/
+.m-header{
+	display: none;
+    padding:0;
+    margin-bottom:14px;
+    .line {
+	    top:50%;
+	    margin-top:-10px;
+	}
+	.u-head1,.u-head2 {
+	    width:50%;
+	    cursor:pointer;
+	}
+}
+
+/*切换active样式*/
+.m-header .u-head1.active,
+.m-header .u-head2.active {
+
+}
+
+.m-cnt{
+    padding:0;
+    .m-pcbox,.m-nerror,.loginbox {
+	    margin-top:14px;
+	}
+	.inputbox {
+	    padding:0 32px 0 36px;
+	}
+	.inputbox,.m-pccnt .pcbtn {
+	    height:42px;
+	    border-color:#c5cddb;
+	}
+	.u-input {
+	    float:none;
+	    position:relative;
+	    width:auto;
+	}
+	#login-form {
+		.u-label{
+		    display:block;
+		}
+		.slidebox {
+		    padding-right:0;
+		    z-index:20 !important;
+		}
+	}
+	.u-logo {
+	    position:absolute;
+	    left:0;
+	}
+	.m-pcbox {
+	    zoom:1;
+	}
+	.m-sug {
+	    top:42px;
+	    left:-37px;
+	    right:-33px;
+	    width:auto;
+	}
+	#login-form .u-label,.u-input input {
+	    left:0;
+	    width:100%;
+	    height:42px;
+	    line-height:42px;
+	    padding-left:0;
+	    background:none;
+	}
+	.u-tip{
+	    position:absolute;
+	    right:0;
+	    top:0;
+	    padding-left:0;
+	}
+	.m-etbox {
+	    background:none;
+	    border:none;
+	    .ettext {
+		    width:auto;
+		    margin:0 6px;
+		}
+	}
+	.optcheck-box .u-input {
+	    left:8px;
+	}
+}
+
+.m-footer {
+    display:none;
+}
+
+/*各行间距*/
+.fur-change-email {
+    width:auto;
+    height:14px;
+    overflow:hidden;
+}
+
+/*登陆验证码*//*手机短信验证码输入框*/
+.m-cnt .m-pcbox,
+.m-cnt .m-ckcnt{
+    position:relative;
+    width:auto;
+    padding:0 130px 0 0;
+}
+
+.m-cnt .m-pcbox:after {
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    content: ".";
+}
+
+.m-cnt .inputbox.ckin,
+.m-cnt .inputbox.m-pc {
+    float:none;
+    display: block;
+    width:auto;
+    padding:0 8px;
+}
+.m-cnt .inputbox.ckin .u-input,
+.m-cnt .inputbox.m-pc .u-input {
+    float:none;
+    position:relative;
+    width:auto;
+}
+
+.m-cnt #login-form .m-ckcnt .u-label,
+.m-cnt #login-form .m-mb .u-label,
+.m-cnt #login-form .m-ckcnt input.cktext,
+.m-cnt .m-pc .pcin {
+    display:block;
+    width:100%;
+    height:42px;
+    overflow: hidden;
+}
+.m-cnt #login-form .m-ckcnt input.cktext::-webkit-input-placeholder,
+.m-cnt .m-pc .pcin::-webkit-input-placeholder {
+    /*font-size:12px;*/
+}
+
+.m-cnt .m-ckcnt .ckimgbox,
+.m-cnt .m-pccnt .pcbtn {
+    position:absolute;
+    top:0;
+    right:0;
+    padding:0;
+    border-width:1px;
+    border-style: solid;
+
+}
+.m-cnt .ckimgbox img,
+.m-cnt .m-pccnt .pcbtn a {
+    height:42px;
+    line-height:42px;
+}
+
+
+/*email自动补全*/
+.m-cnt .m-sug .js-selected,
+.m-cnt .m-sug .itm{
+    height:25px;
+    line-height:25px;
+}
+
+/*错误信息提示*/
+.m-cnt .m-nerror .ferrorhead,
+.m-cnt .m-nerror .ferrorhead2 {
+    width:auto;
+}
+
+/*注册按钮*/
+.u-loginbtn {
+    background-color:#5084cb;
+}
+
+/*滑块验证码*/
+.ScapTcha{
+	.slideBg {
+	    margin:0 !important;
+	}
+	.statusTxt {
+	    left:auto !important;
+	    right:-37px;
+	    .u-success {
+		    margin-top:3px;
+		}
+	}
+}
+ 
+/*帐号安全等级低提示框*/
+.w-exception {
+    width:auto;
+    height:auto;
+    .cnt{
+	    padding:0;
+	}
+}
+
+.u-btn-middle3 {
+    width:49%;
+}
+
+/*手机密码、短信登录切换*/
+.u-tab {
+    width:auto;
+}
+
+]]></content>
+	<tabTrigger>feg-transition</tabTrigger>
+	<description>transition动画</description>
+	<scope>source.less</scope>
+</snippet>

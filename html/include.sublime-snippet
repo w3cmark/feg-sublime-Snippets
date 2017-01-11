@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+<!--#include virtual="${1:xxx}"-->
+]]></content>
+	<tabTrigger>feg-include</tabTrigger>
+	<description>插入include</description>
+	<scope>text.html</scope>
+</snippet>

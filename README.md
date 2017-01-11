@@ -41,6 +41,9 @@ Be sure you have enabled "<" and "feg" in your Preferences.sublime-settings:
 |---------------------------------------- | :-----------------------------:|
 | mobile template:html5                   | feg-html5-m                    |
 | pc template:html5                       | feg-html5-pc                   |
+| nie-download-plugin code                | feg-niedownload                |
+| include code                            | feg-include                    |
+| inline code                             | feg-inline                     |
 | alertbox-plugin link (CSS only)         | feg-alertbox                   |
 | baidutemplate-plugin link (JS only)     | feg-baidutemplate              |
 | jquery.easing-plugin link (JS only)     | feg-easing                     |
@@ -84,6 +87,7 @@ Be sure you have enabled "<" and "feg" in your Preferences.sublime-settings:
 | text-overflow-ellipsis                  | feg-text-overflow-ellipsis     |
 | transform                               | feg-transform                  |
 | transition                              | feg-transition                 |
+| animation libs                          | feg-animation-lib              |
 
 ### Javascript
 
@@ -103,8 +107,11 @@ Be sure you have enabled "<" and "feg" in your Preferences.sublime-settings:
 | niedownload plugin                      | feg-niedownload                |
 | pager plugin                            | feg-pager                      |
 | PopDialog plugin                        | feg-popdialog                  |
-| share plugin                            | feg-share                      |
+| shareV5 plugin                          | feg-share                      |
+| mobishare2 plugin                       | feg-mobishare2                 |
 | videoV2 plugin                          | feg-videoV2                    |
+| login2 plugin                           | feg-login2                     |
+| interface module:DB                     | feg-db                         |
 
 
 ### License

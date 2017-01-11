@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+<link rel="import" href="${1:xxx}.html?__inline">
+]]></content>
+	<tabTrigger>feg-inline</tabTrigger>
+	<description>插入inline</description>
+	<scope>text.html</scope>
+</snippet>

@@ -1,0 +1,26 @@
+<snippet>
+	<content><![CDATA[
+var Login = nie.require("nie.util.login2");
+
+var example = Login.create({
+    holder: '#example', // 组件容器，请使用 id 作为选择器。【必填】
+    success: function (params) {// 登陆成功后回调。返回用户名作参数的对象。【选填】
+        Login.fn.isLogin(function(flag){
+            if(flag){
+                \$('#example').hide();
+                \$('#nie-login-info').html(Login.fn.getUserName() + ' <a href="javascript:Login.fn.logOut()">[退出]</a>');
+            }
+        });
+    }
+});
+Login.fn.isLogin(function(flag){
+    if(flag){
+        \$('#example').hide();
+        \$('#nie-login-info').html(Login.fn.getUserName() + ' <a href="javascript:Login.fn.logOut()">[退出]</a>');
+    }
+});
+]]></content>
+	<tabTrigger>feg-login2</tabTrigger>
+	<description>登录组件基础用法</description>
+	<scope>source.js</scope>
+</snippet>
