@@ -1,0 +1,24 @@
+<snippet>
+	<content><![CDATA[
+<!-- 新闻列表 -->
+#foreach(\$item in \$listNews) ##mark=列表数据,in=1,out=15
+#if(\$velocityCount==1 && \$pagerInfo.curPageNum==1)#set(\$cname="first")
+#else #set(\$cname="")
+#end
+
+<!-- 链接 --> \$item.url
+<!-- 时间 --> \$date.format("MM-dd", \$item.showTime)
+<!-- 栏目简称 --> \$item.kindShortName
+<!-- 标题 --> \$item.title
+<!-- 短标题 --> \$item.shortTitle
+<!-- 标题颜色 --> \$item.titleColor
+<!-- 封面图 --> \$item.imageUrl
+<!-- 摘要 --> \$item.comment
+<!-- 附加内容-备注 --> \$item.cusattr["Remark"]
+
+#end
+]]></content>
+	<tabTrigger>fegcms-list</tabTrigger>
+	<description>新闻列表</description>
+	<scope>text.html</scope>
+</snippet>

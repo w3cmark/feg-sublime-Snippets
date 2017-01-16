@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+#foreach(\$item in \$keywordInfos)
+    <span>\$item</span>，
+#end
+]]></content>
+	<tabTrigger>fegcms-keywordInfos</tabTrigger>
+	<description>新闻内页关键字列表</description>
+	<scope>text.html</scope>
+</snippet>

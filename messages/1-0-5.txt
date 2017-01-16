@@ -1,0 +1,33 @@
+=============================================
+FEG Snippets - Has been Created !!
+=============================================
+
+New Features
+------------------------------------------------------------
+ - Added "keywordInfos"
+ - Added "kindTraceInfos"
+ - Added "list"
+ - Added "news"
+ - Added "pages"
+ - Added "reNewsInfos"
+ - Added "resourceInfos"
+ - Added "list-old"
+ - Added "news-old"
+ - Added "pages-old"
+ - Added "point"
+ - Added "jquery(mixNIE).1.11"
+ - Added "zepto(mixNIE).last"
+ - Added "newslist"
+ - Added "newsprenext"
+ - Updated "art-reset-m"
+ - Updated "art-reset-pc"
+ - Updated "reset-m"
+ - Updated "reset-pc"
+------------------------------------------------------------
+
+Documentation, examples & issue filing can be found here:
+https://github.com/w3cmark/feg-sublime-snippets
+
+------------------------------
+Follow me on weibo: @w3cmark
+------------------------------

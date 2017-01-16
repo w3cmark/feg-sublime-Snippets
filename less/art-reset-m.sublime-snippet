@@ -45,29 +45,29 @@
             font-size:.28rem;
             font-weight:bold;
         }
-        img,table img,object,embed,video{
+        img,
+        table img,
+        object,
+        embed,
+        video{
             max-width:100%!important;
             width: auto!important;
             height: auto!important;
         }
-        /* 加粗    */
+        /* 新闻系统 */
         .b{
             font-weight:bold;
         }
-        /* 着重色1  */
         .red{
             color:#f00;
         }
-        /* 着重色1加粗 */
         .redb{
             color:#f00;
             font-weight:bold;
         }
-        /* 着重色2  */
         .blue{
             color:#00F;
         }
-        /* 服务器名字 */
         .fuchsia{
             color:#ff00ff;
         }

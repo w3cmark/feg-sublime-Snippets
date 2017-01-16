@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+<ul>
+    #foreach(\$item in \$reNewsInfos)
+        <li><a href="\$item.url">【\$item.showTime】\$item.title</a></li>
+    #end
+</ul>
+]]></content>
+	<tabTrigger>fegcms-reNewsInfos</tabTrigger>
+	<description>新闻内页相关新闻</description>
+	<scope>text.html</scope>
+</snippet>

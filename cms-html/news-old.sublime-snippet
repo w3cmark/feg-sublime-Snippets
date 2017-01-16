@@ -1,0 +1,47 @@
+<snippet>
+	<content><![CDATA[
+<!--文章.标题-->
+<h1><!--Title--></h1>
+
+<!-- 文章.信息（关键字、作者、来自、时间） -->
+<p class="artInfo"> <span class="artKeyword">关键词：
+    <!--#CGIEXT# KeywordsListBegin:-->
+
+    <!--#CGIEXT# KeywordsLinkBegin:-->
+
+    <a href="<!--KeywordsLink-->">
+    <!--#CGIEXT# KeywordsLinkEnd:-->
+
+    <!--KeywordsName-->
+
+    <!--#CGIEXT# KeywordsListEnd:-->
+    </a> </span>
+
+    <!--#CGIEXT# AuthorBegin:-->
+
+    <span class="artAuthor">作者：<!--Author--></span>
+
+    <!--#CGIEXT# AuthorEnd:-->
+
+    <span class="artDate"><!--ShowTime--></span>
+</p>
+
+<!-- 文章.来源（原文地址）-->
+<!--#CGIEXT# bbsBegin:-->　
+<p class="artSource">原文地址：
+    <script>document.write('<a href="<!--bbs-->" target="_blank"><!--bbs--></a>')</script>
+</p>
+<!--#CGIEXT# bbsEnd:-->
+
+<!--导读-->
+<div class="artTips"><span>导读：</span><!--Remark--></div>
+
+<div class="artText">
+    <!--正文-->
+    <!--Content-->
+</div>
+]]></content>
+	<tabTrigger>fegcms-news-old</tabTrigger>
+	<description>新闻详情(旧)</description>
+	<scope>text.html</scope>
+</snippet>

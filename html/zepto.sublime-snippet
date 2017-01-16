@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+<script src="https://nie.res.netease.com/comm/js/zepto(mixNIE).last.js"></script>
+]]></content>
+	<tabTrigger>feg-zepto</tabTrigger>
+	<description>zepto</description>
+	<scope>text.html</scope>
+</snippet>

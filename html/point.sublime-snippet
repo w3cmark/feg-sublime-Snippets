@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+<!--营销点代码-->
+<script type="text/javascript">
+    document.write("<iframe src=\"https://gad.netease.com/mmad/point?point_id=${1}&s=aPr0%2BeWkfK7LrlnmBq%2BsmDP2Wqs%3D\" width=\"0\" height=\"0\" style='display:none' frameborder=\"0\"><\/iframe>");
+</script>
+]]></content>
+	<tabTrigger>feg-point</tabTrigger>
+	<description>营销点代码</description>
+	<scope>text.html</scope>
+</snippet>

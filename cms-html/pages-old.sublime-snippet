@@ -1,0 +1,43 @@
+<snippet>
+	<content><![CDATA[
+<!--分页-->
+<!--#CGIEXT# JumperBegin:-->
+<p class="paging">
+
+    <!--#CGIEXT# FirstPageUrlBegin:-->
+    <a href="<!--FirstPageUrl-->"><i>首页</i></a>
+    <!--#CGIEXT# FirstPageUrlEnd:-->
+
+    <!--#CGIEXT# PrePageUrlBegin:-->
+    <a href="<!--PrePageUrl-->"><i>上一页</i></a>
+    <!--#CGIEXT# PrePageUrlEnd:-->
+
+    <!--#CGIEXT# PageNumBegin:-->
+
+    <!--#CGIEXT# UrlHeadBegin:-->
+    <a href="<!--PageNumUrl-->" >
+        <!--#CGIEXT# UrlHeadEnd:-->
+        <i><!--PageNum--></i>
+        <!--#CGIEXT# UrlTailBegin:-->
+    </a>
+    <!--#CGIEXT# UrlTailEnd:-->
+
+    <!--#CGIEXT# PageNumEnd:-->
+
+    <!--#CGIEXT# NextPageUrlBegin:-->
+    <a href="<!--NextPageUrl-->"><i>下一页</i></a>
+    <!--#CGIEXT# NextPageUrlEnd:-->
+
+    <!--#CGIEXT# FinalPageUrlBegin:-->
+    <a href="<!--FinalPageUrl-->"><i>末页</i></a>
+    <!--#CGIEXT# FinalPageUrlEnd:-->
+
+    第<!--CurPageNum-->页 共<!--TotalPages-->页
+
+</p>
+<!--#CGIEXT# JumperEnd:-->
+]]></content>
+	<tabTrigger>fegcms-pages-old</tabTrigger>
+	<description>新闻分页(旧)</description>
+	<scope>text.html</scope>
+</snippet>

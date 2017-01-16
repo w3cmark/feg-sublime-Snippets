@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+<script src="https://nie.res.netease.com/comm/js/jquery(mixNIE).1.11.js"></script>
+]]></content>
+	<tabTrigger>feg-jquery</tabTrigger>
+	<description>jquery</description>
+	<scope>text.html</scope>
+</snippet>

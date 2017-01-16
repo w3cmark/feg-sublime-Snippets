@@ -1,0 +1,38 @@
+<snippet>
+	<content><![CDATA[
+\$.ajax({
+    url: 'https://sixhorse.game.163.com/news/outer/newsprenext.do',
+    type: 'GET',
+    data: {
+        contentKindCode: "${1:15205}",//新闻所属的分类ID
+        newsCode : ${2:648498}, //新闻的code(非ID)
+    },
+    dataType: 'jsonp',
+    success: function(data){
+
+        //接口调用失败
+        if(!data.succ)return alert(data.msg);
+
+        //遍历新闻
+        for(var i=0,l=data.result.length;i<l;i++){
+
+            var item = data.result[i];
+
+            item.title  //新闻标题   
+            item.url //新闻链接 
+            item.showtime  //发布时间
+            item.imageFileId //预留
+            item.imageUrl  //新闻单个封面图url
+            item.imageUrls //新闻多个封面图url,使用";"分割
+            item.redirectUrl //跳转新闻跳转url
+            item.comment //新闻摘要
+            item.type  //类型，1表示下一篇，2表示上一篇
+        }
+    },
+    error: function(){}
+});
+]]></content>
+	<tabTrigger>fegcms-newsprenext</tabTrigger>
+	<description>读指定新闻的上下篇</description>
+	<scope>source.js</scope>
+</snippet>

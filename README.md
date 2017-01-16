@@ -44,6 +44,9 @@ Be sure you have enabled "<" and "feg" in your Preferences.sublime-settings:
 | nie-download-plugin code                | feg-niedownload                |
 | include code                            | feg-include                    |
 | inline code                             | feg-inline                     |
+| point code                              | feg-point                      |
+| jquery(mixNIE).1.11 link (JS only)      | feg-jquery                     |
+| zepto(mixNIE).last link (JS only)       | feg-zepto                      |
 | alertbox-plugin link (CSS only)         | feg-alertbox                   |
 | baidutemplate-plugin link (JS only)     | feg-baidutemplate              |
 | jquery.easing-plugin link (JS only)     | feg-easing                     |
@@ -66,6 +69,16 @@ Be sure you have enabled "<" and "feg" in your Preferences.sublime-settings:
 | GreenSock-tweenlite-plugin link (JS only)| feg-tweenlite                 |
 | GreenSock-tweenmax-plugin link (JS only) | feg-tweenmax                  |
 | GreenSock-xss-plugin link (JS only)      | feg-xss                       |
+| keywordInfos  cms-html code              | fegcms-keywordInfos           |
+| kindTraceInfos  cms-html code            | fegcms-kindTraceInfos         |
+| list  cms-html code                      | fegcms-list                   |
+| news  cms-html code                      | fegcms-news                   |
+| pages  cms-html code                     | fegcms-pages                  |
+| reNewsInfos  cms-html code               | fegcms-reNewsInfos            |
+| resourceInfos  cms-html code             | fegcms-resourceInfos          |
+| list-old  cms-html code                  | fegcms-list-old               |
+| news-old  cms-html code                  | fegcms-news-old               |
+| pages-old  cms-html code                 | fegcms-pages-old              |
 
 
 ### Less
@@ -112,6 +125,8 @@ Be sure you have enabled "<" and "feg" in your Preferences.sublime-settings:
 | videoV2 plugin                          | feg-videoV2                    |
 | login2 plugin                           | feg-login2                     |
 | interface module:DB                     | feg-db                         |
+| newslist cms-js                         | fegcms-newslist                |
+| newsprenext cms-js                      | fegcms-newsprenext             |
 
 
 ### License

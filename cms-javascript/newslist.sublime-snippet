@@ -1,0 +1,41 @@
+<snippet>
+	<content><![CDATA[
+\$.ajax({
+    url: 'https://sixhorse.game.163.com/news/outer/newslist.do',
+    type: 'GET',
+    data: {
+        contentkind: "${1:846}",//分类ID，多个用逗号分隔
+        limit: ${2:5}, //获取条数
+        start : ${3:1}, //第几页数据，默认从1开始
+        beginDate : '${4:2016-9-1}', //开始时间，日期格式为'YYYY-MM-DD'
+        endDate : '${5:2016-9-2}' //结束时间，同上 
+    },
+    dataType: 'jsonp',
+    success: function(data){
+
+        //接口调用失败
+        if(!data.succ)return alert(data.msg);
+        //新闻总条数
+        data.count
+        //遍历新闻
+        for(var i=0,l=data.result.length;i<l;i++){
+
+            var item = data.result[i];
+
+            item.title  //新闻标题   
+            item.url //新闻链接 
+            item.showtime  //发布时间
+            item.imageFileId //预留
+            item.imageUrl  //新闻单个封面图url
+            item.imageUrls //新闻多个封面图url,使用";"分割
+            item.redirectUrl //跳转新闻跳转url
+            item.comment //新闻摘要
+        }
+    },
+    error : function(){}
+});
+]]></content>
+	<tabTrigger>fegcms-newslist</tabTrigger>
+	<description>读指定新闻分类</description>
+	<scope>source.js</scope>
+</snippet>

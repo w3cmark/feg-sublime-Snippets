@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+#foreach(\$item in \$kindTraceInfos)
+    <a href="\$item.link">\$item.name</a>/
+#end
+]]></content>
+	<tabTrigger>fegcms-kindTraceInfos</tabTrigger>
+	<description>新闻内页面包线</description>
+	<scope>text.html</scope>
+</snippet>

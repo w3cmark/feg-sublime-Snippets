@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[
+
+<!-- 标题 --> \$newsInfo.title
+<!-- 子标题 --> \$newsInfo.subTitle
+<!-- 短标题 --> \$newsInfo.shortTitle
+<!-- 封面图片 --> <img src="\$newsInfo.imageUrl"/>
+<!-- 新闻地址 --> <a href="#">\$newsInfo.url</a>
+<!-- 页面id --> \$newsInfo.id
+<!-- 旧cms的页面id --> \$newsInfo.code
+<!-- 作者 --> \$newsInfo.author
+<!-- 时间 --> \$date.format('yyyy-MM-dd',$newsInfo.showTime)
+<!-- 摘要 --> \$newsInfo.comment
+<!-- 正文 --> \$newsInfo.content
+
+]]></content>
+	<tabTrigger>fegcms-news</tabTrigger>
+	<description>新闻详情</description>
+	<scope>text.html</scope>
+</snippet>

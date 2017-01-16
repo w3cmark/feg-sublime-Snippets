@@ -4,7 +4,7 @@
     font-family:"simSun";
     font-size:14px;
     .artTitle{
-        font-family:"黑体";
+        font-family:"STHeiti";
         line-height:30px;
         font-size:20px;
         text-align:center;
@@ -32,7 +32,6 @@
     }
     .artPoem{
         margin:7px 0;
-        font-family:"楷体";
         font-size:14px;
         line-height:24px;
         color:#c77322;
@@ -47,7 +46,6 @@
         }
         h2{
             text-indent:18px;
-            height:30px;
             line-height:30px;
             font-size:16px;
             font-weight:bold;
@@ -60,7 +58,6 @@
         h3{
             margin-bottom:14px;
             text-indent:23px;
-            height:27px;
             line-height:27px;
             font-size:14px;
             font-weight:bold;
@@ -105,24 +102,20 @@
             font-size:14px;
         }
     }
-    /* 加粗    */
+    /* 新闻系统 */
     .b{
         font-weight:bold;
     }
-    /* 着重色1  */
     .red{
         color:#f00;
     }
-    /* 着重色1加粗 */
     .redb{
         color:#f00;
         font-weight:bold;
     }
-    /* 着重色2  */
     .blue{
         color:#00F;
     }
-    /* 服务器名字 */
     .fuchsia{
         color:#ff00ff;
     }
@@ -131,7 +124,8 @@
         padding:15px 0;
         font-size:12px;
         text-align:center;
-        i,a:hover i{
+        i,
+        a:hover i{
             margin:0 1px;
             padding:2px 5px;
             font-style:normal;

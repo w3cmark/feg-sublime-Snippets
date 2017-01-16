@@ -1,0 +1,31 @@
+<snippet>
+	<content><![CDATA[
+<!-- 新闻列表 -->
+
+<!--#CGIEXT# HeadlineNewsBegin:-->
+
+    <!-- 第一条新闻 -->
+
+<!--#CGIEXT# HeadlineNewsEnd:-->
+
+<!-- 其它 -->
+<!--#CGIEXT# OutNewsBegin:-->
+
+<!--#CGIEXT# InNewsBegin:-->
+
+<!-- 链接 --> <!--NewsUrl-->
+<!-- 时间 --> <!--ShowTime--> 
+<!-- 栏目简称 --> <!--KindShortName-->
+<!-- 标题 --> <!--ShortTitle-->
+<!-- 标题颜色 --> <!--TitleColor-->
+<!-- 封面图 --> <!--ImageUrl-->
+<!-- 附加内容-备注 --> <!--Remark-->
+
+<!--#CGIEXT# InNewsEnd:-->
+
+<!--#CGIEXT# OutNewsEnd:-->
+]]></content>
+	<tabTrigger>fegcms-list-old</tabTrigger>
+	<description>新闻列表(旧)</description>
+	<scope>text.html</scope>
+</snippet>

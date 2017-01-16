@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+<!--分页-->
+#set (\$pageCur="")
+#foreach(\$item in \$pagerInfo.showPageNums)
+    #if(\$item==\$pagerInfo.curPageNum)#set(\$pageCur="select")
+    #else #set(\$pageCur="")
+    #end
+    #set (\$pageLinkIndex = \$item - 1)
+    <a href="\$pagerInfo.urls[\$pageLinkIndex]" class="\$pageCur">\$item</a>
+#end
+]]></content>
+	<tabTrigger>fegcms-pages</tabTrigger>
+	<description>新闻分页</description>
+	<scope>text.html</scope>
+</snippet>

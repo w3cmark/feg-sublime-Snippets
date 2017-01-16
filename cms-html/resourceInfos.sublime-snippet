@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+<ul>
+    #foreach(\$item in \$resourceInfos)
+        <li><img title="\$item.name" src="\$item.url" /></li>
+    #end
+</ul>
+]]></content>
+	<tabTrigger>fegcms-resourceInfos</tabTrigger>
+	<description>新闻内页图片或者视频列表</description>
+	<scope>text.html</scope>
+</snippet>
