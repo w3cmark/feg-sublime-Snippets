@@ -45,7 +45,7 @@
             font-size:.28rem;
             font-weight:bold;
         }
-        img,
+        p img,
         table img,
         object,
         embed,

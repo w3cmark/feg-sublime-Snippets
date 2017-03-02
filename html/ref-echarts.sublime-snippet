@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+<script src="https://nie.res.netease.com/comm/js/nie/ref/echarts.js"></script>
+]]></content>
+	<tabTrigger>feg-echarts</tabTrigger>
+	<description>echarts组件js资源</description>
+	<scope>text.html</scope>
+</snippet>

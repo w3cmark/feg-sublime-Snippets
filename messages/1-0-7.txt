@@ -1,0 +1,19 @@
+=============================================
+FEG Snippets - Has been Created !!
+=============================================
+
+New Features
+------------------------------------------------------------
+ - Added "ref-echarts"
+ - Added "ref-isotope"
+ - Updated "list.sublime-snippet"
+ - Updated "art-reset-m.sublime-snippet"
+ - Updated "reset-m.sublime-snippet"
+------------------------------------------------------------
+
+Documentation, examples & issue filing can be found here:
+https://github.com/w3cmark/feg-sublime-snippets
+
+------------------------------
+Follow me on weibo: @w3cmark
+------------------------------

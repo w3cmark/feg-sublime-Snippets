@@ -3,6 +3,7 @@
 html{
     -ms-text-size-adjust:100%;
     -webkit-text-size-adjust:100%;
+    text-size-adjust:100%;
 }
 html,
 body,
@@ -127,11 +128,7 @@ html{
     margin:0 auto;
     overflow:hidden;
 }
-@media only screen and (min-width:1025px){
-    .main{
-        max-width:7.5rem;
-    }
-}
+
 html{
     font-size:312.5%;
 }

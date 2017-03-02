@@ -15,6 +15,7 @@
 <!-- 封面图 --> \$item.imageUrl
 <!-- 摘要 --> \$item.comment
 <!-- 附加内容-备注 --> \$item.cusattr["Remark"]
+<!-- 文章自定义内容1 --> \$item.cusattr["udf1"]
 
 #end
 ]]></content>

@@ -3,6 +3,6 @@
 <script src="https://nie.res.netease.com/comm/js/nie/ref/baidutemplate.js"></script>
 ]]></content>
 	<tabTrigger>feg-baidutemplate</tabTrigger>
-	<description>baidutemplate组件</description>
+	<description>baidutemplate组件js资源</description>
 	<scope>text.html</scope>
 </snippet>
