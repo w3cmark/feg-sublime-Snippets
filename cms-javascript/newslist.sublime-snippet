@@ -4,7 +4,7 @@
     url: 'https://sixhorse.game.163.com/news/outer/newslist.do',
     type: 'GET',
     data: {
-        contentkind: "${1:846}",//分类ID，多个用逗号分隔
+        contentkind: '${1:846}',//分类ID，多个用逗号分隔
         limit: ${2:5}, //获取条数
         start : ${3:1}, //第几页数据，默认从1开始
         beginDate : '${4:2016-9-1}', //开始时间，日期格式为'YYYY-MM-DD'

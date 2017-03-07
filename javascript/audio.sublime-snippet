@@ -1,17 +1,18 @@
 <snippet>
 	<content><![CDATA[
-var audio = nie.require("nie.util.audio");
+var audio = nie.require('nie.util.audio');
 
 // demo
 var mp3 = audio.create({
-    audio: ['https://***/song1.mp3', 'https://***/song2.mp3', 'https://***/song3.mp3'],
-    autoPlay: true, 
-    loop: true, 
-    end: function(cur, length) { 
-        console.log('第' + (cur+1) + '首歌已播放完，总共有' + (length+1) + '首');
-    }
+	audio: ['https://***/song1.mp3', 'https://***/song2.mp3', 'https://***/song3.mp3'],
+	autoPlay: true, 
+	loop: true, 
+	end: function(cur, length) { 
+		console.log('第' + (cur+1) + '首歌已播放完，总共有' + (length+1) + '首');
+	}
 });
 ]]></content>
 	<tabTrigger>feg-audio</tabTrigger>
+	<description>音频组件</description>
 	<scope>source.js</scope>
 </snippet>

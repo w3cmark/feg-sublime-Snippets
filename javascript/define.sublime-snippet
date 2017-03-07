@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-nie.define("${1:模块名}",function(){
+nie.define('${1:模块名}', function(){
 	
 });
 ]]></content>

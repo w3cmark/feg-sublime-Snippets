@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-var FormCheck = nie.require("nie.util.FormCheck");
+var FormCheck = nie.require('nie.util.FormCheck');
 
 /*****************************逐个检测*****************************/
 if(!FormCheck.required(\$phone)){

@@ -1,21 +1,21 @@
 <snippet>
 	<content><![CDATA[
-var videoModule = nie.require("nie.util.videoV2");
+var videoModule = nie.require('nie.util.videoV2');
 
 var video = videoModule({
-    fat : "#video",//放视频的容器
-    width:"600",//视频宽度
-    height:"400",//视频高度
-    //wmode:"direct",//flash wmode值,默认direct
-    movieUrl:"",//标清视频地址
-    HDmovieUrl : "",//高清视频地址
-    SHDmovieUrl : "",//超清视频地址
-    vtype : "",//默认选用哪种清晰度，分别有d,hd,shd，默认不填则会采用校验网速然后自动匹配
-    //autoPlay:false,//是否自动播放，默认false
-    //startImg:null,//开始图片地址，默认false
-    //loopTimes:0,//循环播放次数，默认0
-    //maskImg:null,//整个flash顶部遮罩图片地址，默认null
-    //bufferTime:5//缓冲时间（秒）,默认5
+    fat : '#video',//放视频的容器
+    width: '600',//视频宽度
+    height: '400',//视频高度
+    //wmode: 'direct',//flash wmode值,默认direct
+    movieUrl: '',//标清视频地址
+    HDmovieUrl: '',//高清视频地址
+    SHDmovieUrl: '',//超清视频地址
+    vtype: '',//默认选用哪种清晰度，分别有d,hd,shd，默认不填则会采用校验网速然后自动匹配
+    //autoPlay: false,//是否自动播放，默认false
+    //startImg: null,//开始图片地址，默认false
+    //loopTimes: 0,//循环播放次数，默认0
+    //maskImg: null,//整个flash顶部遮罩图片地址，默认null
+    //bufferTime: 5//缓冲时间（秒）,默认5
 });
 ]]></content>
 	<tabTrigger>feg-videoV2</tabTrigger>

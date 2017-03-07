@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-var flash = nie.require("util.swfobject");
+var flash = nie.require('util.swfobject');
 
 if(/ipad/i.test(navigator.userAgent.toLowerCase()) == false){
  	var v = '<video autoplay="autoplay" preload="auto" controls="controls" webkit-playsinline="true" playsinline="true" id="video">'
@@ -10,11 +10,11 @@ if(/ipad/i.test(navigator.userAgent.toLowerCase()) == false){
 }else{
  	\$('#Jlinve').flash({
 		swf:'${2:http://res.cc.netease.com/webcc/weblbs/htdocs/webcc/stoneSwf/ClientLoader.swf?config=Chat&roomId=520&subId=3357714&webccType=4085&useBlank=1&showGetInRoomLayer=1&gameType=xyq&useChat=1&showChat=0&showIntroduce=1&playerParam=nomask,1;src,xyqjnh2015}',
-		width:${3:960},
-		height:${4:600},
-		allowScriptAccess:'always',
+		width: ${3:960},
+		height: ${4:600},
+		allowScriptAccess: 'always',
 		allowFullScreen: true,
-		wmode:'opaque',
+		wmode: 'opaque',
 		base: '.'//该参数不可少，否则直播无法出来
 	});
 }

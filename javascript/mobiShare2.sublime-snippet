@@ -1,21 +1,21 @@
 <snippet>
 	<content><![CDATA[
-var mbshare = nie.require("nie.util.mobiShare2");
+var mbshare = nie.require('nie.util.mobiShare2');
 
 MobileShare.init({
-    title: \$("#share_title").html(),//分享给朋友的分享标题
-    desc: \$("#share_desc").html(),//分享给朋友的分享描述
-    url: \$("#share_url").html(),//分享地址,若不指定，默认以当前页面地址作为分享地址
-    imgurl: \$("#share_pic").attr("data-src"),//分享图片
-    circleTitle: \$("#circle_title").html(),//分享到朋友圈的标题。不填则与title一致
-    guideText: \$("#share_guide").html(),//微信中点分享按钮（参数button）显示的分享引导语
-    qrcodeIcon: \$("#qr_icon").attr("data-src"),//二维码图标
-    shareCallback: function(res) {//微信易信分享回调res=｛type:0,res:[微信返回的提示]｝res.type：0表示取消，-1：分享失败，1：分享到朋友圈，2：分享给好友，3：QQ，4：微博。易信只返回1或2两种情况。
+	title: \$('#share_title').html(),//分享给朋友的分享标题
+	desc: \$('#share_desc').html(),//分享给朋友的分享描述
+	url: \$('#share_url').html(),//分享地址,若不指定，默认以当前页面地址作为分享地址
+	imgurl: \$('#share_pic').attr('data-src'),//分享图片
+	circleTitle: \$('#circle_title').html(),//分享到朋友圈的标题。不填则与title一致
+	guideText: \$('#share_guide').html(),//微信中点分享按钮（参数button）显示的分享引导语
+	qrcodeIcon: \$('#qr_icon').attr('data-src'),//二维码图标
+	shareCallback: function(res) {//微信易信分享回调res=｛type:0,res:[微信返回的提示]｝res.type：0表示取消，-1：分享失败，1：分享到朋友圈，2：分享给好友，3：QQ，4：微博。易信只返回1或2两种情况。
 
-    },
-    wxSdkCallback:function(){//微信sdk加载完成后回调，可在此回调中调用微信JS-SDK的其他API,如上传图片等。
+	},
+	wxSdkCallback:function(){//微信sdk加载完成后回调，可在此回调中调用微信JS-SDK的其他API,如上传图片等。
 
-    }
+	}
 });
 ]]></content>
 	<tabTrigger>feg-mobishare2</tabTrigger>

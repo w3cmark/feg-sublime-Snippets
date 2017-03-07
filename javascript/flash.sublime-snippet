@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-var flash = nie.require("util.swfobject");
+var flash = nie.require('util.swfobject');
 
 \$('#flash-wrap').flash({
     swf: '${1:}',

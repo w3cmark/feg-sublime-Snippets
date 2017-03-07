@@ -1,14 +1,14 @@
 <snippet>
 	<content><![CDATA[
-var niedownload = nie.require("nie.util.niedownload");
+var niedownload = nie.require('nie.util.niedownload');
 
 NieDownload.create({
-	wrapper:\$("#nie-download"),//下载模块最外层容器
-	enableAndroid:true,//是否开发安卓下载
-	enableIos:true,//是否开发IOS下载
-	useSSL:true,//是否使用https，默认为false
-	//qrcode:"icon地址",//自定义二维码里面的icon
-	disableClick:function(){//设置未开发下载的按钮点击后执行此函数 
+	wrapper: \$('#nie-download'),//下载模块最外层容器
+	enableAndroid: true,//是否开发安卓下载
+	enableIos: true,//是否开发IOS下载
+	useSSL: true,//是否使用https，默认为false
+	//qrcode: 'icon地址',//自定义二维码里面的icon
+	disableClick: function(){//设置未开发下载的按钮点击后执行此函数 
 
 	}
 });

@@ -1,20 +1,20 @@
 <snippet>
 	<content><![CDATA[
-var shareV5 = nie.require("nie.util.shareV5"),
-	shareUrl = \$("#share_url").html(),
-	sharePic = \$("#share_pic").attr("data-src"),
-	shareTxt = \$("#share_desc").html(),
-	shareTitle = \$("#share_title").html();
+var shareV5 = nie.require('nie.util.shareV5'),
+	shareUrl = \$('#share_url').html(),
+	sharePic = \$('#share_pic').attr('data-src'),
+	shareTxt = \$('#share_desc').html(),
+	shareTitle = \$('#share_title').html();
 	
 var share = shareV5({
-	fat: "#NIE-share", //组件插入父级（dom或选择器），默认："#NIE-share"
+	fat: '#NIE-share', //组件插入父级（dom或选择器），默认：'#NIE-share'
 	type: 1, //组件类别，默认:1（1：小icon，2：大icon，3：右侧滚动条分享，4：图片分享，5：文本分享，6：带文字的小icon）
 	defShow: [23,22,2,1,4], //默认展示的分享按钮 
 	title: shareTitle, //分享标题,默认：当前页面的title
 	//url: null, //分享链接，默认：当前页面的url
 	img: sharePic, //分享图片，默认：null
 	content: shareTxt //分享正文，只有部分平台支持。默认：当前页面的title
-	//product:"产品号" //选填，自适应163.com域名的产品，论坛需要指定（论坛指定规范：天下贰论坛 product="tx2_bbs"）
+	//product: '产品号' //选填，自适应163.com域名的产品，论坛需要指定（论坛指定规范：天下贰论坛 product="tx2_bbs"）
 });
 ]]></content>
 	<tabTrigger>feg-share</tabTrigger>

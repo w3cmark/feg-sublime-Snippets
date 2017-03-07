@@ -1,20 +1,20 @@
 <snippet>
 	<content><![CDATA[
-var Gallery = nie.require("nie.util.galleryV2");
+var Gallery = nie.require('nie.util.galleryV2');
 
 var myGallery = Gallery.create({
-    galleryContainer: ".gallery_container",
-    slidesPerView:5,
-    gallery_prev:'.gallery_prev',
-    gallery_next:'.gallery_next',
-    stretch:-100,
-    initialSlide:4,
-    onGalleryStart:function(gallery_item){
+	galleryContainer: '.gallery_container',
+	slidesPerView:5,
+	gallery_prev: '.gallery_prev',
+	gallery_next: '.gallery_next',
+	stretch: -100,
+	initialSlide: 4,
+	onGalleryStart: function(gallery_item){
 
-    },
-    onGalleryEnd:function(gallery_item){
-        //alert("onGalleryEnd方法执行了");
-    }
+	},
+	onGalleryEnd: function(gallery_item){
+		//alert("onGalleryEnd方法执行了");
+	}
 });
 ]]></content>
 	<tabTrigger>feg-galleryV2</tabTrigger>
