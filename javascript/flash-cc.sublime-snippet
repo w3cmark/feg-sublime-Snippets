@@ -4,12 +4,12 @@ var flash = nie.require('util.swfobject');
 
 if(/ipad/i.test(navigator.userAgent.toLowerCase()) == false){
  	var v = '<video autoplay="autoplay" preload="auto" controls="controls" webkit-playsinline="true" playsinline="true" id="video">'
-	+'<source src="${1:http://cgi.v.cc.163.com/redirect/video/216503589.m3u8?nosec=1}"></source>'
+	+'<source src="${1:https://vapi.v.cc.163.com/redirect/video/216503589.m3u8?nosec=1}"></source>'
 	+'</video>';
 	\$('#Jlinve').html(v);
 }else{
  	\$('#Jlinve').flash({
-		swf:'${2:http://res.cc.netease.com/webcc/weblbs/htdocs/webcc/stoneSwf/ClientLoader.swf?config=Chat&roomId=520&subId=3357714&webccType=4085&useBlank=1&showGetInRoomLayer=1&gameType=xyq&useChat=1&showChat=0&showIntroduce=1&playerParam=nomask,1;src,xyqjnh2015}',
+		swf:'${2:https://cc.res.netease.com/webcc/weblbs/htdocs/webcc/stoneSwf/ClientLoader.swf?config=Chat&roomId=520&subId=3357714&webccType=4085&useBlank=1&showGetInRoomLayer=1&gameType=xyq&useChat=1&showChat=0&showIntroduce=1&playerParam=nomask,1;src,xyqjnh2015}',
 		width: ${3:960},
 		height: ${4:600},
 		allowScriptAccess: 'always',

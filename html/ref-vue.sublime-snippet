@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+<script src="https://nie.res.netease.com/comm/js/nie/ref/??vue.js,vue-router.js,vue-resource.js,vuex.js"></script>
+]]></content>
+	<tabTrigger>feg-vue</tabTrigger>
+	<description>Vue系列</description>
+	<scope>text.html</scope>
+</snippet>

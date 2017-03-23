@@ -3,11 +3,11 @@
 var flash = nie.require('util.swfobject');
 
 \$('#flash-wrap').flash({
-    swf: '${1:}',
-    width: ${2:960},
-    height: ${3:600},
-    allowScriptAccess: 'always',
-    wmode: 'opaque'
+	swf: '${1:}',
+	width: ${2:960},
+	height: ${3:600},
+	allowScriptAccess: 'always',
+	wmode: 'opaque'
 });
 ]]></content>
 	<tabTrigger>feg-flash</tabTrigger>

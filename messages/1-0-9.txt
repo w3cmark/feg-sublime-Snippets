@@ -1,0 +1,18 @@
+=============================================
+FEG Snippets - Has been Created !!
+=============================================
+
+New Features
+------------------------------------------------------------
+ - Added "ref-vue"
+ - Added "gamestart"
+ - Updated "reset-m"
+ - Updated "flash-cc"
+------------------------------------------------------------
+
+Documentation, examples & issue filing can be found here:
+https://github.com/w3cmark/feg-sublime-snippets
+
+------------------------------
+Follow me on weibo: @w3cmark
+------------------------------

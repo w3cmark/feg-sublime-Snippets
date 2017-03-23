@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+var GameStart = nie.require("nie.util.gamestart");
+	GameStart.init({
+		target: '#gamestart', //启动按钮的容器
+		product: 'dfw9' //启动的游戏产品代号
+	});
+]]></content>
+	<tabTrigger>feg-gamestart</tabTrigger>
+	<description>一键启动游戏组件</description>
+	<scope>source.js</scope>
+</snippet>

@@ -205,6 +205,9 @@ html{
 .transform(@arg){
     .pre(transform;@arg);
 }
+.transform-origin(@args) {
+    .pre(transform-origin,@args);
+}
 .animation(@value){
     .pre(animation;@value);
 }
@@ -308,6 +311,40 @@ html{
     -webkit-box-orient: vertical;
     -webkit-line-clamp: @line;
     word-break: break-all;
+}
+
+//垂直水平居中
+.horizontal(){
+    display:-webkit-box;
+    display:-moz-box;
+    display:-o-box;
+    display:-ms-box;
+    display:box;
+    .pre(box-orient,horizontal);
+    .pre(box-align,center);
+    .pre(box-pack,center);
+}
+//垂直居中
+.horizontalA(){
+    display:-webkit-box;
+    display:-moz-box;
+    display:-o-box;
+    display:-ms-box;
+    display:box;
+    .pre(box-orient,horizontal);
+    .pre(box-align,center);
+    // .pre(box-pack,center);
+}
+//水平居中
+.horizontalB(){
+    display:-webkit-box;
+    display:-moz-box;
+    display:-o-box;
+    display:-ms-box;
+    display:box;
+    .pre(box-orient,horizontal);
+    // .pre(box-align,center);
+    .pre(box-pack,center);
 }
 ]]></content>
 	<tabTrigger>feg-reset-m</tabTrigger>
